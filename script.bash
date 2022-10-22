@@ -23,6 +23,9 @@ f() {
   done
 }
 parent=$@
+if [ parent=='' ]; then
+parent='.'
+fi
 [ "$#" -ne 0 ] && parent="$1"
 echo $parent
 f $parent ""
