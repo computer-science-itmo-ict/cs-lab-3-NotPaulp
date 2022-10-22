@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+export LANG=en_US.UTF-8
 kolvodirect=0
 kolvofile=0
 f() {
