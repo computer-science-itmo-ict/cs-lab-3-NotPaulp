@@ -8,7 +8,7 @@ f() {kolvodirect=$(expr $kolvodirect + 1)
   local child_count=${#children[@]}
   for idx in "${!children[@]}"; do 
     local child="${children[$idx]}"
-    local sbefore="│   "
+    local sbefore="│    "
     local symb="├── "
     if [ $idx -eq $(expr ${#children[@]} - 1) ]; then
       symb="└── "
