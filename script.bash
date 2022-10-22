@@ -30,4 +30,17 @@ fi
 echo $parent
 f $parent ""
 echo
-echo "$(expr $kolvodirect - 1) directories, $kolvofile files"
+kolvodirect=$(expr $kolvodirect - 1)
+if [[ $kolvodirect -eq 1 ]]
+then
+answerdir='directory'
+else
+answerdir='directories'
+fi
+if [[ $kolvofile -eq 1 ]]
+then
+answerfile='file'
+else
+answerfile='files'
+fi
+echo "$kolvodirect $answerdir, $kolvofile $answerfile"
