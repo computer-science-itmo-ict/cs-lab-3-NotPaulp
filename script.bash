@@ -22,7 +22,7 @@ f() {
       kolvofile=$(expr $kolvofile + 1)
   done
 }
-parent="."
+parent=$@
 [ "$#" -ne 0 ] && parent="$1"
 echo $parent
 f $parent ""
