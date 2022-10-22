@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
-
-
 kolvodirect=0
 kolvofile=0
-
 f() {kolvodirect=$(expr $kolvodirect + 1)
   local directory=$1
   local pref=$2
