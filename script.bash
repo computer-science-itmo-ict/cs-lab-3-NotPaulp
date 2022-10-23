@@ -10,7 +10,7 @@ f() {
   local child_count=${#children[@]}
   for i in "${!children[@]}"; do 
     local child="${children[$i]}"
-    local sbefore="│   "
+    local sbefore="│   "
     local symb="├── "
     if [ $i -eq $(expr ${#children[@]} - 1) ]; then
       symb="└── "
